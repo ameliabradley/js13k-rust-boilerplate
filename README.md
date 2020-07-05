@@ -48,10 +48,6 @@ $EDITOR package.json # change package details
 * Build with `yarn build` - This places the output in the `dist` directory
 * Serve with `yarn serve`
 
-### Other commands
-
-* Serve with `yarn serve`
-
 # Credits
 
 * Cliff Biffle's guide to [Making really tiny WebAssembly graphics demos](http://cliffle.com/blog/bare-metal-wasm/)
