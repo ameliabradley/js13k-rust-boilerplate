@@ -1,0 +1,10 @@
+[package]
+name = "rust_wasm_game"
+version = "0.1.0"
+authors = ["Lee Bradley <elephanthunter@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[lib]
+crate-type = ["cdylib"]
