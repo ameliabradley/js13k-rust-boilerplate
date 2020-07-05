@@ -7020,10 +7020,10 @@ yazl@^2.1.0:
   dependencies:
     buffer-crc32 "~0.2.3"
 
-zipstats@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/zipstats/-/zipstats-1.0.1.tgz#5e88f9e71564ab41bada423902cb67e2112cd4c3"
-  integrity sha512-lNHAWcsUTZRuCxvd0UmSRtOwACV/AProVEMQl/RXdBNcJ+L4odN9A3/L9o35JGDmTgewnuXIZ1mWxZ8aPhi3/Q==
+zipstats@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/zipstats/-/zipstats-1.0.2.tgz#424e870c04a8f68bc46524dad8a54db316c8c1a6"
+  integrity sha512-EXtCUGi+3L031W9vD+DfSF1B3XQz3MvWboOofK87N+kaqVVPvTarr2oCXw9QqMqC+82OHdl7c9fVbDOZf0t/Gg==
   dependencies:
     adm-zip "^0.4.16"
     chalk "^3.0.0"
