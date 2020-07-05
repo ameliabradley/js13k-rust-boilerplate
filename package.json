@@ -1,7 +1,8 @@
 {
   "license": "MIT",
   "scripts": {
-    "build": "yarn gulp build && yarn run zipstats zip/game.zip",
+    "build": "yarn gulp build && yarn stats",
+    "stats": "yarn run zipstats zip/game.zip",
     "watch": "concurrently --kill-others \"yarn gulp watch\" \"yarn serve\"",
     "serve": "http-server dist/"
   },
