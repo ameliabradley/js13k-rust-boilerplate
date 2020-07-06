@@ -5103,6 +5103,13 @@ postcss@^7.0.1, postcss@^7.0.13, postcss@^7.0.14, postcss@^7.0.2, postcss@^7.0.2
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+precisebar@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/precisebar/-/precisebar-2.0.0.tgz#937e3010a34b95ca5086c29393ebd31a73c25f9f"
+  integrity sha512-Md8j3VHSQAzOiaNZT87LjbXUMRklzqf7yLLUYZk9gMf+XtZ8F84QIaFBWr25FQMCwtRyt6MQmFAXGR0QKt/yoA==
+  dependencies:
+    chalk "^4.1.0"
+
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
@@ -7020,12 +7027,13 @@ yazl@^2.1.0:
   dependencies:
     buffer-crc32 "~0.2.3"
 
-zipstats@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/zipstats/-/zipstats-1.0.2.tgz#424e870c04a8f68bc46524dad8a54db316c8c1a6"
-  integrity sha512-EXtCUGi+3L031W9vD+DfSF1B3XQz3MvWboOofK87N+kaqVVPvTarr2oCXw9QqMqC+82OHdl7c9fVbDOZf0t/Gg==
+zipstats@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/zipstats/-/zipstats-1.0.3.tgz#6f20346146c3a6815662a17e6b73d42f07e18ddf"
+  integrity sha512-v0o7qXJ7mQCV4MEQJDTyGkema1DY8TGEeh6IP4LhqWqqFMM2fi9b97AlEKMdNiKro2wV+82yeUUmUGG2XJw4XQ==
   dependencies:
     adm-zip "^0.4.16"
     chalk "^3.0.0"
     filesize "^6.1.0"
+    precisebar "^2.0.0"
     table "^5.4.6"
