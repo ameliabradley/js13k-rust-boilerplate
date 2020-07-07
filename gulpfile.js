@@ -1,8 +1,7 @@
 const gulp = require("gulp");
 
-const lintHTML = require("gulp-htmllint");
 const lintCSS = require("gulp-stylelint");
-const lintJS = require("gulp-eslint");
+const eslint = require("gulp-eslint");
 const deleteFiles = require("gulp-rimraf");
 const minifyHTML = require("gulp-minify-html");
 const minifyCSS = require("gulp-clean-css");
@@ -78,10 +77,6 @@ const target = "wasm32-unknown-unknown";
 const wasmname = 'rust_wasm_game.wasm';
 const bin = `target/${target}/release/${wasmname}`;
 
-gulp.task("lintHTML", () => {
-  return gulp.src("src/**.html").pipe(lintHTML());
-});
-
 gulp.task("lintCSS", () => {
   return gulp.src(paths.src.css).pipe(
     lintCSS({
@@ -91,7 +86,10 @@ gulp.task("lintCSS", () => {
 });
 
 gulp.task("lintJS", () => {
-  return gulp.src(paths.src.js).pipe(lintJS()).pipe(lintJS.failAfterError());
+  return gulp.src(paths.src.js)
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
 });
 
 gulp.task("cleanDist", () => {
@@ -165,7 +163,7 @@ gulp.task("zip", () => {
     .pipe(checkFileSize({ fileSizeLimit: thirteenKb }));
 });
 
-gulp.task("test", gulp.parallel("lintHTML", "lintCSS", "lintJS"));
+gulp.task("test", gulp.parallel("lintCSS", "lintJS"));
 
 gulp.task(
   "build",
