@@ -2,15 +2,15 @@
 
 # Rust JS13k Pixel Game Boilerplate
 
-This is a boilerplate for JS13k pixel game written in Rust.
+This is a boilerplate for a pixel game written in Rust, specifically tailored for the [js13k competition](https://js13kgames.com/).
 
 ## Features
 
 * Sharp pixels
 * Resizable canvas with correct aspect ratio
 * <1kb wasm size
+* Minifies html and javascript
 * TODO: Sends keyboard input to Rust
-* TODO: Minifies html and javascript
 
 ## Trade-offs
 
